@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoaib Raza - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Shoaib Raza</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Hi, I'm <span class="highlight">Shoaib Raza</span></h1>
+      <p class="hero-subtitle">Computer Science Graduate | MERN Stack Developer</p>
+      <p class="hero-description">Passionate about building web applications that solve real-world problems</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I recently completed my graduation in 2024 from <strong>PMAS Arid Agriculture University</strong> with a
+            degree in Computer Science.</p>
+          <p>During my academic journey, I developed a strong foundation in web development and completed my Final Year
+            Project using the MERN Stack - a Loan Eligibility Checking Web Application.</p>
+          <p>I'm enthusiastic about creating efficient, user-friendly web applications and continuously learning new
+            technologies to enhance my skills.</p>
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value">shoaibnaqvi1434@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone:</span>
+              <span class="info-value">+92314*******5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">M</div>
+          <h3>MongoDB</h3>
+          <p>Database Management</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">E</div>
+          <h3>Express.js</h3>
+          <p>Backend Framework</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">R</div>
+          <h3>React</h3>
+          <p>Frontend Library</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">N</div>
+          <h3>Node.js</h3>
+          <p>Runtime Environment</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">{ }</div>
+          <h3>JavaScript</h3>
+          <p>Programming Language</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>HTML & CSS</h3>
+          <p>Web Fundamentals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Loan Eligibility Checking Web App</h3>
+            <span class="project-tag">FYP Project</span>
+          </div>
+          <p class="project-description">
+            A comprehensive MERN Stack application designed to evaluate loan eligibility based on various financial
+            parameters.
+            Features include user authentication, dynamic form validation, and real-time eligibility calculation.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Personal Portfolio Website</h3>
+          </div>
+          <p class="project-description">
+            A clean and responsive portfolio website built with HTML5, CSS3, and vanilla JavaScript.
+            Showcases projects, skills, and professional information with smooth animations and mobile-first design.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part
+          of your vision.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shoaib Raza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="scroll-top">↑</button>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Thank You!</h3>
+      <p>Your message has been received. I'll get back to you soon.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
