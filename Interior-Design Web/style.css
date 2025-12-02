@@ -1,11 +1,17 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* General Body Styles */
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1,
@@ -16,9 +22,11 @@ h5 {
     font-weight: bold;
 }
 
+/* Sidebar Styles */
 .sidebar {
     width: 300px;
     background-color: #f44336;
+    /* Red color */
     color: white;
     position: fixed;
     height: 100%;
@@ -28,9 +36,11 @@ h5 {
     padding-top: 20px;
     overflow: auto;
     display: none;
+    /* Hidden on small screens by default, handled by media query or JS */
 }
 
-@media (min-width: 993px) {
+/* Show sidebar on large screens */
+@media (min-width: 1025px) {
     .sidebar {
         display: block;
     }
@@ -53,13 +63,14 @@ h5 {
     padding: 64px 16px;
 }
 
-/* Content */
+/* Main Content Styles */
 .main-content {
-    margin-left: 342px;
+    margin-left: 340px;
+    /* Space for sidebar */
     margin-right: 40px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .main-content {
         margin-left: 0;
         margin-right: 0;
@@ -67,37 +78,38 @@ h5 {
     }
 }
 
-/* Header(Mobile) */
+/* Header (Mobile) */
 .mobile-header {
-    display: inline-block;
+    display: none;
     background-color: #f44336;
     color: white;
-    padding: 10px 16px;
-    position: relative;
+    padding: 16px;
+    position: fixed;
     top: 0;
     width: 100%;
-    box-sizing: border-box;
-}
-
-.mobile-header > span:last-child {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: calc(100% - 90px); /* leaves space for the menu icon */
     z-index: 2;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (max-width: 420px) {
-    .mobile-header > span:last-child {
-        display: block;
-        font-size: 18px;
-        max-width: calc(100% - 70px);
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+    .mobile-header {
+        display: flex;
+    }
+
+    /* Fix overlap on mobile */
+    .section {
+        margin-top: 120px;
     }
 }
 
@@ -131,6 +143,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -8px;
+    /* Negative margin for gutter */
 }
 
 .col-half {
@@ -212,9 +225,11 @@ h5 {
     width: 33.33%;
     padding: 0 8px;
     box-sizing: border-box;
-    float: left; 
+    float: left;
+    /* Using float for beginner feel or just flex */
 }
 
+/* Using flex for team row as well */
 .team-row {
     display: flex;
     flex-wrap: wrap;
@@ -328,36 +343,11 @@ h5 {
     text-align: right;
     margin-top: 75px;
     margin-right: 40px;
+    /* Match main content margin */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .footer {
         margin-right: 0;
-    }
-}
-
-/* Show sidebar permanently on larger screens */
-@media (min-width: 1200px) {
-    .sidebar {
-        display: block !important;
-        width: 200px; /* adjust width as needed */
-        position: static;
-        height: 100vh;
-    }
-
-    .mobile-header {
-        display: none;
-    }
-
-    .overlay {
-        display: none !important;
-    }
-
-    .main-content {
-        margin-left: 200px; /* same as sidebar width */
-    }
-
-    .close-menu-btn {
-        display: none !important;
     }
 }
